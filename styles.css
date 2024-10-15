@@ -1,13 +1,62 @@
+/* CSS Variables */
+
 :root {
   --font-heading: "Lora", serif;
   --font-body: "Poppins", sans-serif;
+  --text-color: #27296d;
+  --background-color: #f5c7f7;
+  --feature-color-lighter: #a393eb;
+  --feature-color-darker: #5e63b6;
 }
 
-h1 {
+/* CSS Headings & Text */
+
+h1,
+h2 {
+  color: var(--text-color);
   font-family: var(--font-heading);
 }
 
-p {
-  font-family: var(--font-body);
-  font-weight: 400;
+h1 {
+  font-size: 80px;
 }
+
+h2 {
+  font-size: 60px;
+}
+
+p {
+  color: var(--text-color);
+  font-family: var(--font-body);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.hero-text {
+  color: var(--background-color);
+}
+
+/* CSS by Elements */
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+/* CSS by Classes */
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/cobbled-street.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* CSS by IDs */
+
+/* Media Queries */

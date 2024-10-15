@@ -66,6 +66,7 @@ button {
   font-size: 25px;
   margin: 50px;
   padding: 50px 20px;
+  width: 600px;
 }
 
 button:hover {
@@ -108,23 +109,27 @@ a {
 }
 
 .second-col {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
+  flex-direction: column;
 }
 
-.footer-container {
+footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("images/footer.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: 100px;
+  padding: 100px;
+  width: 100%;
+}
+
+.footer-container {
   display: grid;
   grid-gap: 100px;
   grid-template-columns: 1fr 2fr 2fr;
-  margin-top: 100px;
-  max-width: 2000px;
-  padding: 100px 100px;
-  width: 100%;
+  width: 90%;
 }
 
 .footer-container h3,

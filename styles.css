@@ -35,7 +35,8 @@ h3 {
   font-size: 40px;
 }
 
-p {
+p,
+li {
   color: var(--text-color);
   font-family: var(--font-body);
   font-size: 30px;
@@ -62,7 +63,7 @@ button {
   box-shadow: var(--box-shadow-light);
   color: var(--background-color);
   font-family: var(--font-body);
-  font-size: 30px;
+  font-size: 25px;
   margin: 50px;
   padding: 50px 20px;
 }
@@ -71,6 +72,15 @@ button:hover {
   background-color: var(--feature-color-lighter);
   border: 3px solid var(--feature-color-darker);
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* CSS by Classes */
@@ -102,6 +112,31 @@ button:hover {
   display: flex;
 }
 
+.footer-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin-top: 100px;
+  max-width: 2000px;
+  padding: 100px 100px;
+  width: 100%;
+}
+
+.footer-container h3,
+.footer-container p {
+  color: var(--background-color);
+}
+
+.footer-container a:visited {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
 /* CSS by IDs */
 
 #description-pic {
@@ -111,6 +146,7 @@ button:hover {
 
 #description-para {
   padding: 0 50px;
+  font-size: 25px;
 }
 
 /* Media Queries */

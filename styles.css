@@ -134,13 +134,15 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 100px;
-  row-gap: 80px;
+  grid-gap: 80px;
   width: 80%;
 }
 
 .image-gallery img {
   border-radius: 20px;
   box-shadow: var(--box-shadow-heavy);
+  max-width: 350px;
+  width: 100%;
 }
 
 .footer-container {

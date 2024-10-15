@@ -1,0 +1,13 @@
+:root {
+  --font-heading: "Lora", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: var(--font-heading);
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+}

@@ -63,7 +63,7 @@ button {
   color: var(--background-color);
   font-family: var(--font-body);
   font-size: 30px;
-  margin-right: 50px;
+  margin: 50px;
   padding: 50px 20px;
 }
 
@@ -94,6 +94,7 @@ button:hover {
 .more-info-container {
   display: flex;
   justify-content: space-around;
+  margin: 0 50px;
 }
 
 .second-col {

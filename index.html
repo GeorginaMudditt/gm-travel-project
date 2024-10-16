@@ -6,16 +6,12 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fjalla+One&family=Gudea:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a127163454.js" crossorigin="anonymous"></script>
     <title>Provence With Kids</title>
   </head>
@@ -24,7 +20,7 @@
       <div class="hero">
         <h2 class="hero-text">🇫🇷 France Travel 🇫🇷</h2>
         <h1 class="hero-text">Provence With Kids</h1>
-        <p class="hero-text">There's a lot more to Provence than rosé!<br /> Here's how to enjoy our beautiful region with children.</p>
+        <p class="hero-text" id="hero-intro">There's a lot more to Provence than rosé!<br /> Here's how to enjoy our beautiful region with children.</p>
         </p>
       </div>
     </header>
@@ -39,7 +35,7 @@
       
       <div class="more-info-container">
         <div class="first-col">
-          <h3>Some music to get you in the Provençal mood ...</h3>
+          <h2>Some music to get you in the Provençal mood ...</h2>
           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1E3TxxAA8GTI2rzi4NUfbJ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div class="second-col">
@@ -47,30 +43,51 @@
           <a href="https://provence-alpes-cotedazur.com/provence/" target="blank"><button id="provence-tourism">Visit Provence Tourism <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
         </div>
       </div>
+
       <section class="highlight-section">
-        <h3 class="title-center">My Provence Highlights</h3>
+        <h2 class="title-center">My Provence Highlights</h2>
         <div class="highlight-container">
           <div class="highlight-card">
-            <h4>Gorges du Verdon</h4>
+            <h3>Gorges du Verdon</h3>
             <iframe class="highlight-vid" src="https://www.youtube.com/embed/iaPRl4Y649Y?si=wzvIr2EGPg5AAm8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p class="highlight-para">The Gorges du Verdon is a river canyon that is often considered to be one of Europe's most beautiful. It is about 25 kilometres long and up to 700 metres deep. <br /><br /><strong>TOP TIP:</strong> Make sure to call and reserve pedalos or canoes in advance if you are going during the summer holidays.</p>
-            <button class="button-small"><a href="https://lesgorgesduverdon.fr/en/home/" target="_blank">Find out more <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+            <button class="button-small button-bottom"><a href="https://lesgorgesduverdon.fr/en/home/" target="_blank">Find out more <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
           </div>
           <div class="highlight-card">
-            <h4>Villecroze Caves and Gardens</h4>
+            <h3>Villecroze Caves and Gardens</h3>
             <iframe class="highlight-vid" title="vimeo-player" src="https://player.vimeo.com/video/180522121?h=8b84104168" frameborder="0"    allowfullscreen></iframe>
             <p class="highlight-para">These caves were formed 700,000 years ago, at the end of the last local ice age. Surrounding them are gardens with a waterfall, picnic areas, a play park, and a river. <br /><br /><strong>TOP TIP:</strong> Only children aged 6 and older are allowed inside the caves. Don't forget to wear comfortable, closed shoes.</p>
             <button class="button-small"><a href="https://www.grottes-villecroze.fr/en/" target="_blank">Find out more <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
           </div>
           <div class="highlight-card">
-            <h4>Valensole Plateau</h4>
+            <h3>Valensole Plateau</h3>
             <iframe class="highlight-vid" src="https://www.youtube.com/embed/_5KN_Parbl0?si=jVTn9PCr4utZGzcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <p class="highlight-para">Drive through Valensole in June and July, and you'll see fields flooded with lavender. You can photograph the fields, meet the farmers, and buy products from lavendar soap to lavendar tea.<br /><br /><strong>TOP TIP:</strong> Leave the pram at home and carry baby in a sling to get amongst the lavendar.</p>
             <button class="button-small"><a href="https://www.france-voyage.com/tourism/valensole-plateau-1455.htm" target="_blank">Find out more <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
           </div>
       </section>
+
+      <section class="beach-section">
+        <h2 class="title-center">Family-Friendly Beaches</h2>
+        <div class="beach-container">
+          <div class="beach-card">
+            <h3>Le Lavandou</h3>
+            <iframe class="beach-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46560.515676187686!2d6.360267308847326!3d43.16684763386408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c92da07802d759%3A0x52fb9ccd93f0cf27!2sPlage%20du%20Lavandou!5e0!3m2!1sen!2sfr!4v1729063792878!5m2!1sen!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="beach-para">Le Lavandou is a town on the Var coast, which offers a wide range of activities and adventures in the summer. The beach is long and sandy, perfect for swimming and sandcastles. There are water sports, mini golf, a cinema, biking and hiking trails, and a mini train for the little ones.<br /><br /><strong>TOP TIP: </strong>Don't miss the Provençal market in Le Lavandou every Thursday morning, where you can buy fresh melons, peaches, tomatoes, and peppers amongst other things.</p>
+          </div>
+          <div class="beach-card">
+            <h3>Plage du Débarquement</h3>
+            <iframe class="beach-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10652.77846514087!2d6.5329440722806345!3d43.192319626611585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cecf0c281cbef1%3A0x5acab00bd69d245f!2sPlage%20du%20D%C3%A9barquement!5e0!3m2!1sen!2sfr!4v1729066181742!5m2!1sen!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="beach-para">Between Cavalaire-sur-Mer and La Croix-Valmer, Plage du Débarquement is a strecth of sandy beach far from the road and backed by trees. You can bring a picnic or walk ten minutes along the beach in either direction to find restaurants and snack bars.<br /><br /><strong>TOP TIP:</strong> Park at Parking de Pardigon for easy access to the beach. There is a beach access mat from the car park onto the sand so that you can bring prams or beach trolleys too.</p>
+          </div>
+          <div class="beach-card">
+            <h3>Plage de la Madrague</h3>
+            <iframe class="beach-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95219.04602130553!2d5.912511894531422!3d43.075960303777066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9217cd869c2d7%3A0x9256f5f061e885a2!2sPlage%20de%20la%20Madrague!5e0!3m2!1sen!2sfr!4v1729066907813!5m2!1sen!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="beach-para">If you like wilder beaches, this one is for you. This is a protected natural area of beach and pine forest, which can be reached via the Four à Chaux calanque. With stunning views, many hiking possibilities, and excellent snorkelling and scuba diving, it is a haven for older kids and teenagers.<br /><br /><strong>TOP TIP:</strong> Bring your own snorkels and masks. Although equipment is available to hire near the beach, it is very expensive and limited. Also, bring your own food and water.</p>
+          </div>
+      </section>
       
-      <h3 class="title-center">Image Gallery</h3>
+      <h2 class="title-center">Image Gallery</h2>
       <div class="gallery-container">
         <div class="image-gallery">
           <img src="images/baby-on-beach.jpg" />
@@ -97,18 +114,18 @@
         <div>
           <h3>Travel to Provence</h3>
           <ul>
-            <li><a href="https://www.nice.aeroport.fr/en" target="_blank">Nice airport <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            <li><a href="https://www.marseille-airport.com/" target="_blank">Marseille airport <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-            <li><a href="https://www.sncf-connect.com/tgv" terget="_blank">TGV (fast train) <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li class="footer-link"><a href="https://www.nice.aeroport.fr/en" target="_blank">Nice airport <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li class="footer-link"><a href="https://www.marseille-airport.com/" target="_blank">Marseille airport <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <li class="footer-link"><a href="https://www.sncf-connect.com/tgv" terget="_blank">TGV (fast train) <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
           </ul>
         </div>
         <div>
           <h3>About me</h3>
-          <p>My name is Georgina. I am a front-end developer and mum of two young kids. Originally from England, I have lived in the Var region of Provence for several years. Find out more about me <a href="https://www.georgina-mudditt.com" target="_blank"><strong>here.</strong></a></p>
+          <p class="footer-para">My name is Georgina. I am a front-end developer and mum of two young kids. Originally from England, I have lived in the Var region of Provence for several years. Find out more about me <a href="https://www.georgina-mudditt.com" target="_blank"><strong>here.</strong></a></p>
         </div>
         <div>
           <h3>About this page</h3>
-          <p>I built this page for the final project of my SheCodes Responsive Add-on course. Find out more about SheCodes <a href="https://www.shecodes.io" target="_blank"><strong>here.</strong></p>
+          <p class="footer-para">I built this page for the final project of my SheCodes Responsive Add-on course. Find out more about SheCodes <a href="https://www.shecodes.io" target="_blank"><strong>here.</strong></p>
         </div>
       </div>
     </footer>

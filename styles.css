@@ -1,8 +1,8 @@
 /* CSS Variables */
 
 :root {
-  --font-heading: "Lora", serif;
-  --font-body: "Poppins", sans-serif;
+  --font-heading: "Bangers", system-ui;
+  --font-body: "Gudea", sans-serif;
   --text-color: #27296d;
   --background-color: #f5c7f7;
   --feature-color-lighter: #a393eb;
@@ -12,14 +12,14 @@
     rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-/* CSS Headings & Text */
+/* CSS Typography */
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   color: var(--text-color);
   font-family: var(--font-heading);
+  letter-spacing: 5px;
 }
 
 h1 {
@@ -28,38 +28,44 @@ h1 {
 
 h2 {
   font-size: 50px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
 }
 
 h3 {
   font-size: 40px;
 }
 
-h4 {
-  font-size: 30px;
-}
-
 p,
 li {
   color: var(--text-color);
   font-family: var(--font-body);
-  font-size: 30px;
   font-weight: 400;
-  line-height: 2;
 }
 
-.hero-text {
-  color: var(--background-color);
-}
+/* Global CSS */
 
-/* CSS by Elements */
-
-body {
-  background-color: var(--background-color);
-  background-image: url("images/brushed-alum-dark.png");
+section {
   margin: 0;
 }
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-center {
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+/* Buttons CSS */
 
 button {
   background-color: var(--feature-color-darker);
@@ -80,27 +86,20 @@ button:hover {
   cursor: pointer;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.button-small {
+  margin: auto auto 20px auto;
+  width: 300px;
 }
 
-a {
-  text-decoration: none;
+.button-small a {
+  color: white;
 }
 
-footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("images/footer.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: 100px;
-  padding: 100px;
-  width: 100%;
-}
+/* Hero CSS */
 
-/* CSS by Classes */
+.hero-text {
+  color: var(--background-color);
+}
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -113,10 +112,28 @@ footer {
   width: 100%;
 }
 
+#hero-intro {
+  font-size: 40px;
+}
+
+/* Description CSS */
+
 .description-container {
   display: flex;
   margin: 100px;
 }
+
+#description-pic {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-heavy);
+}
+
+#description-para {
+  padding: 0 50px;
+  font-size: 30px;
+}
+
+/* More Info CSS */
 
 .more-info-container {
   display: flex;
@@ -130,18 +147,32 @@ footer {
   flex-direction: column;
 }
 
+/* Highlights CSS */
+
 .highlight-section {
   background-color: var(--feature-color-lighter);
   background-image: url("images/60-lines.png");
   padding-bottom: 100px;
 }
 
-.title-center {
-  text-align: center;
-  padding: 100px 0 0 0;
+.highlight-vid {
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  width: 300px;
 }
 
-.highlight-container {
+/* Beaches CSS */
+
+.beach-section {
+  background-color: var(--background-color);
+  background-image: url("images/60-lines.png");
+  padding-bottom: 100px;
+}
+
+/* Highlights & Beaches CSS */
+
+.highlight-container,
+.beach-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
@@ -149,30 +180,34 @@ footer {
   width: 90%;
 }
 
-.highlight-card {
+.highlight-card,
+.beach-card {
   background-color: white;
   border-radius: 20px;
   box-shadow: var(--box-shadow-heavy);
+  display: flex;
+  flex-direction: column;
   padding: 50px;
   text-align: center;
 }
 
-.highlight-vid {
-  width: 300px;
-  aspect-ratio: 16 / 9;
-}
-
-.highlight-para {
+.highlight-para,
+.beach-para {
   font-size: 25px;
 }
 
-.button-small {
-  width: 300px;
+.highlight-section,
+.beach-section {
+  margin: 0;
+  padding-bottom: 100px;
 }
 
-.button-small a {
-  color: white;
+.highlight-section h3,
+.beach-section h2 {
+  margin-top: 0;
 }
+
+/* Gallery CSS */
 
 .gallery-container {
   display: flex;
@@ -194,10 +229,24 @@ footer {
   width: 100%;
 }
 
+/* Footer CSS */
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  padding: 100px 0;
+  width: 100%;
+}
+
 .footer-container {
   display: grid;
   grid-gap: 100px;
   grid-template-columns: 1fr 2fr 2fr;
+  margin-left: 100px;
   width: 90%;
 }
 
@@ -211,16 +260,21 @@ footer {
   text-decoration: none;
 }
 
-/* CSS by IDs */
-
-#description-pic {
-  border-radius: 10px;
-  box-shadow: var(--box-shadow-heavy);
-}
-
-#description-para {
-  padding: 0 50px;
+.footer-para,
+.footer-link {
   font-size: 25px;
 }
+
+.footer-para {
+  line-height: 1.5;
+}
+
+.footer-link {
+  line-height: 2;
+}
+
+/* CSS by Classes */
+
+/* CSS by IDs */
 
 /* Media Queries */
